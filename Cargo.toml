@@ -1,6 +1,14 @@
 [workspace]
 
 members = [
-  "mogwai-design",
-  "mogwai-sandbox",
+  "mogwai",
+  "crates/mogwai-html-macro",
+  "examples/sandbox",
+  "examples/todomvc",
+  #"cookbook"
 ]
+
+
+[profile.release]
+lto = true
+opt-level = 3
